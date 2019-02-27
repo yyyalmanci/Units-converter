@@ -1,0 +1,17 @@
+C:\Users\yusuf\Desktop\c#\donusumler\donusumler\bin\Debug\donusumler.exe.config
+C:\Users\yusuf\Desktop\c#\donusumler\donusumler\bin\Debug\donusumler.exe
+C:\Users\yusuf\Desktop\c#\donusumler\donusumler\bin\Debug\donusumler.pdb
+C:\Users\yusuf\Desktop\c#\donusumler\donusumler\obj\Debug\donusumler.csprojAssemblyReference.cache
+C:\Users\yusuf\Desktop\c#\donusumler\donusumler\obj\Debug\donusumler.AnaMenu.resources
+C:\Users\yusuf\Desktop\c#\donusumler\donusumler\obj\Debug\donusumler.Properties.Resources.resources
+C:\Users\yusuf\Desktop\c#\donusumler\donusumler\obj\Debug\donusumler.csproj.GenerateResource.cache
+C:\Users\yusuf\Desktop\c#\donusumler\donusumler\obj\Debug\donusumler.csproj.CoreCompileInputs.cache
+C:\Users\yusuf\Desktop\c#\donusumler\donusumler\obj\Debug\donusumler.exe
+C:\Users\yusuf\Desktop\c#\donusumler\donusumler\obj\Debug\donusumler.pdb
+C:\Users\yusuf\Desktop\c#\donusumler\donusumler\obj\Debug\donusumler.Sicaklik.resources
+C:\Users\yusuf\Desktop\c#\donusumler\donusumler\obj\Debug\donusumler.Uzunluk.resources
+C:\Users\yusuf\Desktop\c#\donusumler\donusumler\obj\Debug\donusumler.Yogunluk.resources
+C:\Users\yusuf\Desktop\c#\donusumler\donusumler\obj\Debug\donusumler.Alan.resources
+C:\Users\yusuf\Desktop\c#\donusumler\donusumler\obj\Debug\donusumler.Hacim.resources
+C:\Users\yusuf\Desktop\c#\donusumler\donusumler\obj\Debug\donusumler.AlanKare.resources
+C:\Users\yusuf\Desktop\c#\donusumler\donusumler\obj\Debug\donusumler.Kutle.resources

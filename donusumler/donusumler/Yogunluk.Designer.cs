@@ -67,7 +67,7 @@
             this.label1.Padding = new System.Windows.Forms.Padding(1, 0, 0, 0);
             this.label1.Size = new System.Drawing.Size(128, 26);
             this.label1.TabIndex = 36;
-            this.label1.Text = "Ağırlık Giriniz";
+            this.label1.Text = "Değer Giriniz";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // kg_lb

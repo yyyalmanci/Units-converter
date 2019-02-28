@@ -36,7 +36,7 @@ namespace donusumler
                     double m = Convert.ToDouble(richTextBox1.Text);
 
                     double inc = 1550*m;
-                    sonucLabel.Text = m + " m^2 = " + inc + "in^2 dir";
+                    sonucLabel.Text = m + " m^2 = " + inc + " in^2 dir";
                     sonucLabel.Width = sonucLabel.Text.Length * 10;
                 }
                 catch
@@ -67,7 +67,7 @@ namespace donusumler
                     double inc = Convert.ToDouble(richTextBox1.Text);
 
                     double m = inc*(6.4516E-4);
-                    sonucLabel.Text = inc + " inc^2 = " + m + "m^2 dir";
+                    sonucLabel.Text = inc + " inc^2 = " + m + " m^2 dir";
                     sonucLabel.Width = sonucLabel.Text.Length * 10;
                 }
                 catch
@@ -98,7 +98,7 @@ namespace donusumler
                     double m = Convert.ToDouble(richTextBox1.Text);
 
                     double ft = 10.76 * m;
-                    sonucLabel.Text = m + " m^2 = " + ft + "ft^2 dir";
+                    sonucLabel.Text = m + " m^2 = " + ft + " ft^2 dir";
                     sonucLabel.Width = sonucLabel.Text.Length * 10;
                 }
                 catch
@@ -129,7 +129,7 @@ namespace donusumler
                     double ft = Convert.ToDouble(richTextBox1.Text);
 
                     double m = ft* (0.0929) ;
-                    sonucLabel.Text = ft + " ft^2 = " + m + "m^2 dir";
+                    sonucLabel.Text = ft + " ft^2 = " + m + " m^2 dir";
                     sonucLabel.Width = sonucLabel.Text.Length * 10;
                 }
                 catch
@@ -160,7 +160,7 @@ namespace donusumler
                     double cm = Convert.ToDouble(richTextBox1.Text);
 
                     double inc = 0.155 * cm;
-                    sonucLabel.Text = cm + " cm^2 = " + inc + "inc^2 dir";
+                    sonucLabel.Text = cm + " cm^2 = " + inc + " inc^2 dir";
                     sonucLabel.Width = sonucLabel.Text.Length * 10;
                 }
                 catch
@@ -191,7 +191,7 @@ namespace donusumler
                     double inc = Convert.ToDouble(richTextBox1.Text);
 
                     double cm = inc*6.4516 ;
-                    sonucLabel.Text = inc + " inc^2 = " + cm + "cm^2 dir";
+                    sonucLabel.Text = inc + " inc^2 = " + cm + " cm^2 dir";
                     sonucLabel.Width = sonucLabel.Text.Length * 10;
                 }
                 catch
@@ -222,7 +222,7 @@ namespace donusumler
                     double cm = Convert.ToDouble(richTextBox1.Text);
 
                     double ft = cm*(1.07E-3);
-                    sonucLabel.Text = cm + " cm^2 = " + ft + "ft^2 dir";
+                    sonucLabel.Text = cm + " cm^2 = " + ft + " ft^2 dir";
                     sonucLabel.Width = sonucLabel.Text.Length * 10;
                 }
                 catch
@@ -253,7 +253,7 @@ namespace donusumler
                     double ft = Convert.ToDouble(richTextBox1.Text);
 
                     double cm = ft * 929.03;
-                    sonucLabel.Text = ft + " ft^2 = " + cm + "cm^2 dir";
+                    sonucLabel.Text = ft + " ft^2 = " + cm + " cm^2 dir";
                     sonucLabel.Width = sonucLabel.Text.Length * 10;
                 }
                 catch
@@ -285,7 +285,7 @@ namespace donusumler
 
                     double inc = mm *(1.55E-3);
                         
-                    sonucLabel.Text = mm + " mm^2 = " + inc + "inc^2 dir";
+                    sonucLabel.Text = mm + " mm^2 = " + inc + " inc^2 dir";
                     sonucLabel.Width = sonucLabel.Text.Length * 10;
                 }
                 catch
@@ -316,7 +316,7 @@ namespace donusumler
                     double inc = Convert.ToDouble(richTextBox1.Text);
 
                     double mm = 645.16 * inc;
-                    sonucLabel.Text = inc + " inc^2 = " + mm + "mm^2 dir";
+                    sonucLabel.Text = inc + " inc^2 = " + mm + " mm^2 dir";
                     sonucLabel.Width = sonucLabel.Text.Length * 10;
                 }
                 catch
@@ -347,7 +347,7 @@ namespace donusumler
                     double mm = Convert.ToDouble(richTextBox1.Text);
 
                     double ft = mm*(1.0764E-5);
-                    sonucLabel.Text = mm + " m^2 = " + ft + "ft^2 dir";
+                    sonucLabel.Text = mm + " m^2 = " + ft + " ft^2 dir";
                     sonucLabel.Width = sonucLabel.Text.Length * 10;
                 }
                 catch
@@ -378,7 +378,7 @@ namespace donusumler
                     double ft = Convert.ToDouble(richTextBox1.Text);
 
                     double mm = 92.903 *ft;
-                    sonucLabel.Text = ft + " ft^2 = " + mm + "mm^2 dir";
+                    sonucLabel.Text = ft + " ft^2 = " + mm + " mm^2 dir";
                     sonucLabel.Width = sonucLabel.Text.Length * 10;
                 }
                 catch

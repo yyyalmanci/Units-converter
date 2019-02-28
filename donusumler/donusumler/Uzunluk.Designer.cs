@@ -155,7 +155,7 @@
             this.label1.Padding = new System.Windows.Forms.Padding(1, 0, 0, 0);
             this.label1.Size = new System.Drawing.Size(155, 26);
             this.label1.TabIndex = 81;
-            this.label1.Text = "Uzunluk Giriniz";
+            this.label1.Text = "Değer Giriniz";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // in_m
@@ -219,7 +219,7 @@
             this.Controls.Add(this.ft_m);
             this.Controls.Add(this.m_inc);
             this.Name = "Uzunluk";
-            this.Text = "Form1";
+            this.Text = "Uzunluk Dönüşümleri";
             this.Load += new System.EventHandler(this.Uzunluk_Load);
             this.ResumeLayout(false);
 

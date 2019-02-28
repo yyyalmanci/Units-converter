@@ -44,24 +44,28 @@ namespace donusumler
         private void Agirlik_Click(object sender, EventArgs e)
         {
             Kutle kutle = new Kutle();
-             kutle.ShowDialog();
+            kutle.StartPosition = FormStartPosition.CenterScreen;
+            kutle.ShowDialog();
         }
 
         private void yogunluk_Click(object sender, EventArgs e)
         {
             Yogunluk yogunluk = new Yogunluk();
+            yogunluk.StartPosition = FormStartPosition.CenterScreen;
             yogunluk.ShowDialog();
         }
 
         private void Alan_Click(object sender, EventArgs e)
         {
             Alan alan = new Alan();
+            alan.StartPosition = FormStartPosition.CenterScreen; 
             alan.ShowDialog();
         }
 
         private void hacim_Click(object sender, EventArgs e)
         {
             Hacim hacim = new Hacim();
+            hacim.StartPosition = FormStartPosition.CenterScreen;
             hacim.ShowDialog();
            
         }
@@ -69,7 +73,58 @@ namespace donusumler
         private void AlanKare_Click(object sender, EventArgs e)
         {
             AlanKare alankare = new AlanKare();
+            alankare.StartPosition = FormStartPosition.CenterScreen;
             alankare.ShowDialog();
+        }
+
+        private void kuvvet_Click(object sender, EventArgs e)
+        {
+            Kuvvet kuvvet = new Kuvvet();
+            kuvvet.StartPosition = FormStartPosition.CenterScreen;
+            kuvvet.ShowDialog();
+        }
+
+        private void moment_Click(object sender, EventArgs e)
+        {
+            Moment moment = new Moment();
+            moment.StartPosition = FormStartPosition.CenterScreen;
+            moment.ShowDialog();
+        }
+
+        private void basinc_Click(object sender, EventArgs e)
+        {
+            Basinc basinc = new Basinc();
+            basinc.StartPosition = FormStartPosition.CenterScreen;
+            basinc.ShowDialog();
+        }
+
+        private void elastik_Click(object sender, EventArgs e)
+        {
+            Elastik elastik = new Elastik();
+            elastik.StartPosition = FormStartPosition.CenterScreen;
+            elastik.ShowDialog();
+        }
+
+        private void rijitlik_Click(object sender, EventArgs e)
+        {
+            Rijitlik rijit = new Rijitlik();
+            rijit.StartPosition = FormStartPosition.CenterScreen;
+            rijit.ShowDialog();
+
+        }
+
+        private void isenerji_Click(object sender, EventArgs e)
+        {
+            IsEnerji isenerji = new IsEnerji();
+            isenerji.StartPosition = FormStartPosition.CenterScreen;
+            isenerji.ShowDialog();
+        }
+
+        private void guc_Click(object sender, EventArgs e)
+        {
+            Guc guc = new Guc();
+            guc.StartPosition = FormStartPosition.CenterScreen;
+            guc.ShowDialog();
         }
     }
     }

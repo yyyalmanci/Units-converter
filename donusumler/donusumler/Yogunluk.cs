@@ -36,7 +36,7 @@ namespace donusumler
                     double kg = Convert.ToDouble(richTextBox1.Text);
 
                     double sl = kg*0.001938;
-                    sonucLabel.Text = kg + " kg/m^3 = " + sl + "sl/ft^3 dür";
+                    sonucLabel.Text = kg + " kg/m^3 = " + sl + " sl/ft^3 dür";
                     sonucLabel.Width = sonucLabel.Text.Length * 10;
                 }
                 catch
@@ -67,7 +67,7 @@ namespace donusumler
                     double kg = Convert.ToDouble(richTextBox1.Text);
 
                     double lb = kg * 0.06248;
-                    sonucLabel.Text = kg + " kg/m^3 = " + lb + "lb/ft^3 dür";
+                    sonucLabel.Text = kg + " kg/m^3 = " + lb + " lb/ft^3 dür";
                     sonucLabel.Width = sonucLabel.Text.Length * 10;
                 }
                 catch
@@ -98,7 +98,7 @@ namespace donusumler
                     double sl = Convert.ToDouble(richTextBox1.Text);
 
                     double kg = sl*515.7;
-                    sonucLabel.Text = sl + " sl/m^3 = " + kg + "kg/ft^3 dür";
+                    sonucLabel.Text = sl + " sl/ft^3 = " + kg + " kg/m^3 dür";
                     sonucLabel.Width = sonucLabel.Text.Length * 10;
                 }
                 catch
@@ -129,7 +129,7 @@ namespace donusumler
                     double lb = Convert.ToDouble(richTextBox1.Text);
 
                     double kg = lb *16.018;
-                    sonucLabel.Text = lb + " lb/m^3 = " + kg + "kg/ft^3 dür";
+                    sonucLabel.Text = lb + " lb/ft^3 = " + kg + " kg/m^3 dür";
                     sonucLabel.Width = sonucLabel.Text.Length * 10;
                 }
                 catch

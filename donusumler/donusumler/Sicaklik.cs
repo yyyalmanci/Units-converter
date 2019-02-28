@@ -12,81 +12,71 @@ namespace donusumler
 {
     public partial class Sicaklik : Form
     {
-        
+
 
         public Sicaklik()
         {
             InitializeComponent();
-            
+
         }
 
         private void Sicaklik_Load(object sender, EventArgs e)
         {
-            c_to_fBTN.Enabled = false;
-            c_to_kBTN.Enabled = false;
-            c_to_rBTN.Enabled = false;
-            k_to_cBTN.Enabled = false;
-            k_to_rBTN.Enabled = false;
-            k_to_fBTN.Enabled = false;
-            f_to_cBTN.Enabled = false;
-            f_to_rBTN.Enabled = false;
-            f_to_kBTN.Enabled = false;
-            r_to_cBTN.Enabled = false;
-            r_to_kBTN.Enabled = false;
-            r_to_fBTN.Enabled = false;
 
-         
+
+
         }
 
-       
 
-        
+
+
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
-            
+
         }
 
-      
+
 
         private void richTextBox1_KeyDown(object sender, KeyEventArgs e)
         {
-            c_to_fBTN.Enabled = true;
-            c_to_kBTN.Enabled = true;
-            c_to_rBTN.Enabled = true;
-            k_to_cBTN.Enabled = true;
-            k_to_rBTN.Enabled = true;
-            k_to_fBTN.Enabled = true;
-            f_to_cBTN.Enabled = true;
-            f_to_rBTN.Enabled = true;
-            f_to_kBTN.Enabled = true;
-            r_to_cBTN.Enabled = true;
-            r_to_kBTN.Enabled = true;
-            r_to_fBTN.Enabled = true;
+
         }
 
 
         private void c_to_fBTN_Click(object sender, EventArgs e)
         {
-            if(richTextBox1.Text.Length == 0)
+            if (richTextBox1.Text.Length == 0)
             {
                 MessageBox.Show("lütfen sayı giriniz");
 
             }
             else
             {
-                
+
                 if (richTextBox1.Text.Contains(","))
                 {
                     richTextBox1.Text = richTextBox1.Text.Replace(",", ".");
 
                 }
-               double Celcius = Convert.ToDouble(richTextBox1.Text);
+                try
+                {
+                    double Celcius = Convert.ToDouble(richTextBox1.Text);
 
-                double fahreneit = Celcius *9/5 + 32;
+                    double fahreneit = Celcius * 9 / 5 + 32;
 
 
-                sonucLabel.Text = Celcius + " Celcius = " + fahreneit + " Fahreneite eşittir";
+                    sonucLabel.Text = Celcius + " Celcius = " + fahreneit + " Fahreneite eşittir";
+
+
+                }
+                catch
+                {
+
+                    MessageBox.Show("Sayı Giriniz");
+
+                }
+
 
 
             }
@@ -106,11 +96,22 @@ namespace donusumler
                     richTextBox1.Text = richTextBox1.Text.Replace(",", ".");
 
                 }
-                double Celcius = Convert.ToDouble(richTextBox1.Text);
 
-                double Kelvin = Celcius + 273.15;
+                try
+                {
+                    double Celcius = Convert.ToDouble(richTextBox1.Text);
 
-                sonucLabel.Text = Celcius + " Celcius = " + Kelvin + " Kelvine eşittir";
+                    double Kelvin = Celcius + 273.15;
+
+                    sonucLabel.Text = Celcius + " Celcius = " + Kelvin + " Kelvine eşittir";
+
+                }
+                catch
+                {
+                    MessageBox.Show("Sayı Giriniz.");
+
+                }
+
 
 
             }
@@ -130,11 +131,22 @@ namespace donusumler
                     richTextBox1.Text = richTextBox1.Text.Replace(",", ".");
 
                 }
-                double Celcius = Convert.ToDouble(richTextBox1.Text);
 
-                double Rankie = ( Celcius+273.15)*9/5;
+                try
+                {
+                    double Celcius = Convert.ToDouble(richTextBox1.Text);
 
-                sonucLabel.Text = Celcius + " Celcius = " + Rankie + " Rankie a eşittir";
+                    double Rankie = (Celcius + 273.15) * 9 / 5;
+
+                    sonucLabel.Text = Celcius + " Celcius = " + Rankie + " Rankie a eşittir";
+
+                }
+                catch
+                {
+
+                    MessageBox.Show("Sayı Giriniz.");
+                }
+
 
 
             }
@@ -155,11 +167,22 @@ namespace donusumler
                     richTextBox1.Text = richTextBox1.Text.Replace(",", ".");
 
                 }
-                double kelvin = Convert.ToDouble(richTextBox1.Text);
 
-                double Celcius = kelvin - 273.15;
+                try
+                {
+                    double kelvin = Convert.ToDouble(richTextBox1.Text);
 
-                sonucLabel.Text = kelvin + " kelvin = " + Celcius + " Celciusa eşittir";
+                    double Celcius = kelvin - 273.15;
+
+                    sonucLabel.Text = kelvin + " kelvin = " + Celcius + " Celciusa eşittir";
+
+                }
+                catch
+                {
+
+                    MessageBox.Show("Sayı Giriniz.");
+                }
+
 
 
             }
@@ -180,11 +203,22 @@ namespace donusumler
                     richTextBox1.Text = richTextBox1.Text.Replace(",", ".");
 
                 }
-                double kelvin = Convert.ToDouble(richTextBox1.Text);
 
-                double fahreneit = (kelvin*9/5) - 459.67;
+                try
+                {
+                    double kelvin = Convert.ToDouble(richTextBox1.Text);
 
-                sonucLabel.Text = kelvin + " kelvin = " + fahreneit + " fahreneite eşittir";
+                    double fahreneit = (kelvin * 9 / 5) - 459.67;
+
+                    sonucLabel.Text = kelvin + " kelvin = " + fahreneit + " fahreneite eşittir";
+
+                }
+                catch
+                {
+
+                    MessageBox.Show("Sayı Giriniz.");
+                }
+
 
 
             }
@@ -205,11 +239,21 @@ namespace donusumler
                     richTextBox1.Text = richTextBox1.Text.Replace(",", ".");
 
                 }
-                double kelvin = Convert.ToDouble(richTextBox1.Text);
+                try
+                {
+                    double kelvin = Convert.ToDouble(richTextBox1.Text);
 
-                double rankie = kelvin*9/5;
+                    double rankie = kelvin * 9 / 5;
 
-                sonucLabel.Text = kelvin + " kelvin = " + rankie + " rankie a eşittir";
+                    sonucLabel.Text = kelvin + " kelvin = " + rankie + " rankie a eşittir";
+                }
+                catch
+                {
+                    MessageBox.Show("Sayı Giriniz.");
+
+
+                }
+
 
 
             }
@@ -230,11 +274,22 @@ namespace donusumler
                     richTextBox1.Text = richTextBox1.Text.Replace(",", ".");
 
                 }
-                double fahreneit = Convert.ToDouble(richTextBox1.Text);
 
-                double celcius = ((fahreneit - 32)*5)/9;
+                try
+                {
+                    double fahreneit = Convert.ToDouble(richTextBox1.Text);
 
-                sonucLabel.Text = fahreneit + " fahreneit = " + celcius + " Celciusa eşittir";
+                    double celcius = ((fahreneit - 32) * 5) / 9;
+
+                    sonucLabel.Text = fahreneit + " fahreneit = " + celcius + " Celciusa eşittir";
+
+                }
+                catch
+                {
+                    MessageBox.Show("Sayı Giriniz.");
+
+                }
+
 
 
             }
@@ -254,11 +309,22 @@ namespace donusumler
                     richTextBox1.Text = richTextBox1.Text.Replace(",", ".");
 
                 }
-                double fahreneit = Convert.ToDouble(richTextBox1.Text);
 
-                double kelvin = (fahreneit + 459.67) * 5 / 9;
+                try
+                {
 
-                sonucLabel.Text = fahreneit + " fahreneit = " + kelvin + " kelvine eşittir";
+                    double fahreneit = Convert.ToDouble(richTextBox1.Text);
+
+                    double kelvin = (fahreneit + 459.67) * 5 / 9;
+
+                    sonucLabel.Text = fahreneit + " fahreneit = " + kelvin + " kelvine eşittir";
+                }
+                catch
+                {
+                    MessageBox.Show("Sayı Giriniz.");
+
+                }
+
 
 
             }
@@ -278,11 +344,21 @@ namespace donusumler
                     richTextBox1.Text = richTextBox1.Text.Replace(",", ".");
 
                 }
-                double fahreneit = Convert.ToDouble(richTextBox1.Text);
+                try
+                {
 
-                double rankie = fahreneit + 459.67;
+                    double fahreneit = Convert.ToDouble(richTextBox1.Text);
 
-                sonucLabel.Text = fahreneit + " fahreneit = " + rankie + " rankie a eşittir";
+                    double rankie = fahreneit + 459.67;
+
+                    sonucLabel.Text = fahreneit + " fahreneit = " + rankie + " rankie a eşittir";
+                }
+                catch
+                {
+                    MessageBox.Show("Sayı Giriniz.");
+
+                }
+
 
 
             }
@@ -303,11 +379,21 @@ namespace donusumler
                     richTextBox1.Text = richTextBox1.Text.Replace(",", ".");
 
                 }
-                double rankie = Convert.ToDouble(richTextBox1.Text);
 
-                double fahreneit = rankie - 459.67;
+                try
+                {
+                    double rankie = Convert.ToDouble(richTextBox1.Text);
 
-                sonucLabel.Text = rankie + " rankie = " + fahreneit + " fahreneit e eşittir";
+                    double fahreneit = rankie - 459.67;
+
+                    sonucLabel.Text = rankie + " rankie = " + fahreneit + " fahreneit e eşittir";
+
+                }
+                catch
+                {
+                    MessageBox.Show("Sayı Giriniz.");
+                }
+
 
 
             }
@@ -328,11 +414,22 @@ namespace donusumler
                     richTextBox1.Text = richTextBox1.Text.Replace(",", ".");
 
                 }
-                double rankie = Convert.ToDouble(richTextBox1.Text);
 
-                double celcius = (rankie - 491.67)*5/9;
+                try
+                {
 
-                sonucLabel.Text = rankie + " rankie = " + celcius + " celcius e eşittir";
+                    double rankie = Convert.ToDouble(richTextBox1.Text);
+
+                    double celcius = (rankie - 491.67) * 5 / 9;
+
+                    sonucLabel.Text = rankie + " rankie = " + celcius + " celcius e eşittir";
+                }
+                catch
+                {
+
+                    MessageBox.Show("Sayı Giriniz.");
+                }
+
 
 
             }
@@ -353,11 +450,21 @@ namespace donusumler
                     richTextBox1.Text = richTextBox1.Text.Replace(",", ".");
 
                 }
-                double rankie = Convert.ToDouble(richTextBox1.Text);
+                try
+                {
+                    double rankie = Convert.ToDouble(richTextBox1.Text);
 
-                double kelvin = rankie*5/9;
+                    double kelvin = rankie * 5 / 9;
 
-                sonucLabel.Text = rankie + " rankie = " + kelvin + " kelvin e eşittir";
+                    sonucLabel.Text = rankie + " rankie = " + kelvin + " kelvin e eşittir";
+
+                }
+                catch
+                {
+                    MessageBox.Show("Sayı Giriniz.");
+
+                }
+
 
 
             }

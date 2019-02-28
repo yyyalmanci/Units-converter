@@ -35,6 +35,13 @@
             this.Alan = new System.Windows.Forms.Button();
             this.hacim = new System.Windows.Forms.Button();
             this.AlanKare = new System.Windows.Forms.Button();
+            this.kuvvet = new System.Windows.Forms.Button();
+            this.moment = new System.Windows.Forms.Button();
+            this.basinc = new System.Windows.Forms.Button();
+            this.elastik = new System.Windows.Forms.Button();
+            this.rijitlik = new System.Windows.Forms.Button();
+            this.isenerji = new System.Windows.Forms.Button();
+            this.guc = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // uzunluk
@@ -107,11 +114,88 @@
             this.AlanKare.UseVisualStyleBackColor = true;
             this.AlanKare.Click += new System.EventHandler(this.AlanKare_Click);
             // 
+            // kuvvet
+            // 
+            this.kuvvet.Location = new System.Drawing.Point(166, 167);
+            this.kuvvet.Name = "kuvvet";
+            this.kuvvet.Size = new System.Drawing.Size(116, 56);
+            this.kuvvet.TabIndex = 7;
+            this.kuvvet.Text = "Kuvvet Dönüştür";
+            this.kuvvet.UseVisualStyleBackColor = true;
+            this.kuvvet.Click += new System.EventHandler(this.kuvvet_Click);
+            // 
+            // moment
+            // 
+            this.moment.Location = new System.Drawing.Point(325, 167);
+            this.moment.Name = "moment";
+            this.moment.Size = new System.Drawing.Size(116, 56);
+            this.moment.TabIndex = 8;
+            this.moment.Text = "Moment Dönüştür";
+            this.moment.UseVisualStyleBackColor = true;
+            this.moment.Click += new System.EventHandler(this.moment_Click);
+            // 
+            // basinc
+            // 
+            this.basinc.Location = new System.Drawing.Point(12, 239);
+            this.basinc.Name = "basinc";
+            this.basinc.Size = new System.Drawing.Size(116, 56);
+            this.basinc.TabIndex = 9;
+            this.basinc.Text = "Basınç Dönüştür";
+            this.basinc.UseVisualStyleBackColor = true;
+            this.basinc.Click += new System.EventHandler(this.basinc_Click);
+            // 
+            // elastik
+            // 
+            this.elastik.Location = new System.Drawing.Point(166, 239);
+            this.elastik.Name = "elastik";
+            this.elastik.Size = new System.Drawing.Size(116, 56);
+            this.elastik.TabIndex = 10;
+            this.elastik.Text = "Elastiklik Katsayısı Dönüştür";
+            this.elastik.UseVisualStyleBackColor = true;
+            this.elastik.Click += new System.EventHandler(this.elastik_Click);
+            // 
+            // rijitlik
+            // 
+            this.rijitlik.Location = new System.Drawing.Point(325, 239);
+            this.rijitlik.Name = "rijitlik";
+            this.rijitlik.Size = new System.Drawing.Size(116, 56);
+            this.rijitlik.TabIndex = 11;
+            this.rijitlik.Text = "Rijitlik Katsayısı Dönüştür";
+            this.rijitlik.UseVisualStyleBackColor = true;
+            this.rijitlik.Click += new System.EventHandler(this.rijitlik_Click);
+            // 
+            // isenerji
+            // 
+            this.isenerji.Location = new System.Drawing.Point(12, 314);
+            this.isenerji.Name = "isenerji";
+            this.isenerji.Size = new System.Drawing.Size(116, 56);
+            this.isenerji.TabIndex = 12;
+            this.isenerji.Text = "İş Enerji Dönüştür";
+            this.isenerji.UseVisualStyleBackColor = true;
+            this.isenerji.Click += new System.EventHandler(this.isenerji_Click);
+            // 
+            // guc
+            // 
+            this.guc.Location = new System.Drawing.Point(166, 314);
+            this.guc.Name = "guc";
+            this.guc.Size = new System.Drawing.Size(116, 56);
+            this.guc.TabIndex = 13;
+            this.guc.Text = "Guc Dönüştür";
+            this.guc.UseVisualStyleBackColor = true;
+            this.guc.Click += new System.EventHandler(this.guc_Click);
+            // 
             // AnaMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(487, 354);
+            this.ClientSize = new System.Drawing.Size(459, 391);
+            this.Controls.Add(this.guc);
+            this.Controls.Add(this.isenerji);
+            this.Controls.Add(this.rijitlik);
+            this.Controls.Add(this.elastik);
+            this.Controls.Add(this.basinc);
+            this.Controls.Add(this.moment);
+            this.Controls.Add(this.kuvvet);
             this.Controls.Add(this.AlanKare);
             this.Controls.Add(this.hacim);
             this.Controls.Add(this.Alan);
@@ -120,7 +204,7 @@
             this.Controls.Add(this.uzunlukDonusum);
             this.Controls.Add(this.uzunluk);
             this.Name = "AnaMenu";
-            this.Text = "Form1";
+            this.Text = "Birim Dönüşümleri";
             this.Load += new System.EventHandler(this.AnaMenu_Load);
             this.ResumeLayout(false);
 
@@ -135,6 +219,13 @@
         private System.Windows.Forms.Button Alan;
         private System.Windows.Forms.Button hacim;
         private System.Windows.Forms.Button AlanKare;
+        private System.Windows.Forms.Button kuvvet;
+        private System.Windows.Forms.Button moment;
+        private System.Windows.Forms.Button basinc;
+        private System.Windows.Forms.Button elastik;
+        private System.Windows.Forms.Button rijitlik;
+        private System.Windows.Forms.Button isenerji;
+        private System.Windows.Forms.Button guc;
     }
 }
 

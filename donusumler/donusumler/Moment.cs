@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace donusumler
 {
-    public partial class Kutle : Form
+    public partial class Moment : Form
     {
-        public Kutle()
+        public Moment()
         {
             InitializeComponent();
         }
 
-        private void kg_sl_Click(object sender, EventArgs e)
+        private void nm_lb_Click(object sender, EventArgs e)
         {
             if (richTextBox1.Text.Length == 0)
             {
@@ -33,10 +33,10 @@ namespace donusumler
                 }
                 try
                 {
-                    double kg = Convert.ToDouble(richTextBox1.Text);
+                    double nm = Convert.ToDouble(richTextBox1.Text);
 
-                    double sl = kg * (68.521E-3);
-                    sonucLabel.Text = kg + " kg = " + sl + " sl dir";
+                    double lb = nm * (8.851);
+                    sonucLabel.Text = nm + " N*m = " + lb + " in*lb dir";
                     sonucLabel.Width = sonucLabel.Text.Length * 10;
                 }
                 catch
@@ -48,38 +48,7 @@ namespace donusumler
             }
         }
 
-        private void sl_kg_Click(object sender, EventArgs e)
-        {
-            if (richTextBox1.Text.Length == 0)
-            {
-                MessageBox.Show("lütfen sayı giriniz");
-
-            }
-            else
-            {
-                if (richTextBox1.Text.Contains(",")) // virgul varsa sayıda noktaya çeviriyor.
-                {
-                    richTextBox1.Text = richTextBox1.Text.Replace(",", ".");
-
-                }
-                try
-                {
-                    double sl = Convert.ToDouble(richTextBox1.Text);
-
-                    double kg = sl * (14.593);
-                    sonucLabel.Text = sl + " sl = " + kg + " kg dir";
-                    sonucLabel.Width = sonucLabel.Text.Length * 10;
-                }
-                catch
-                {
-                    MessageBox.Show("sayı giriniz");
-                }
-
-
-            }
-        }
-
-        private void lb_kg_Click(object sender, EventArgs e)
+        private void lb_nm_Click(object sender, EventArgs e)
         {
             if (richTextBox1.Text.Length == 0)
             {
@@ -97,8 +66,8 @@ namespace donusumler
                 {
                     double lb = Convert.ToDouble(richTextBox1.Text);
 
-                    double kg = lb * 0.4536;
-                    sonucLabel.Text = lb + " lb = " + kg + " kg dir";
+                    double nm = lb * (0.113);
+                    sonucLabel.Text = lb + " lb*in = " + nm + " N*m dir";
                     sonucLabel.Width = sonucLabel.Text.Length * 10;
                 }
                 catch
@@ -110,7 +79,7 @@ namespace donusumler
             }
         }
 
-        private void kg_lb_Click(object sender, EventArgs e)
+        private void nm_ft_Click(object sender, EventArgs e)
         {
             if (richTextBox1.Text.Length == 0)
             {
@@ -126,10 +95,41 @@ namespace donusumler
                 }
                 try
                 {
-                    double kg = Convert.ToDouble(richTextBox1.Text);
+                    double nm = Convert.ToDouble(richTextBox1.Text);
 
-                    double lb = kg * 2.2046;
-                    sonucLabel.Text = kg + " kg = " + lb + " lb dir";
+                    double ft = nm * (0.7376);
+                    sonucLabel.Text = nm + " N*m = " + ft + " ft*lb dir";
+                    sonucLabel.Width = sonucLabel.Text.Length * 10;
+                }
+                catch
+                {
+                    MessageBox.Show("sayı giriniz");
+                }
+
+
+            }
+        }
+
+        private void ft_nm_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.Text.Length == 0)
+            {
+                MessageBox.Show("lütfen sayı giriniz");
+
+            }
+            else
+            {
+                if (richTextBox1.Text.Contains(",")) // virgul varsa sayıda noktaya çeviriyor.
+                {
+                    richTextBox1.Text = richTextBox1.Text.Replace(",", ".");
+
+                }
+                try
+                {
+                    double ft = Convert.ToDouble(richTextBox1.Text);
+
+                    double nm = ft * (1.356);
+                    sonucLabel.Text = ft + " ft*lb = " + nm + " N*m dir";
                     sonucLabel.Width = sonucLabel.Text.Length * 10;
                 }
                 catch

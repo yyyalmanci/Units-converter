@@ -63,17 +63,59 @@
     <Compile Include="AnaMenu.Designer.cs">
       <DependentUpon>AnaMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Elastik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Elastik.Designer.cs">
+      <DependentUpon>Elastik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guc.Designer.cs">
+      <DependentUpon>Guc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Hacim.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Hacim.Designer.cs">
       <DependentUpon>Hacim.cs</DependentUpon>
     </Compile>
+    <Compile Include="IsEnerji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsEnerji.Designer.cs">
+      <DependentUpon>IsEnerji.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kutle.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Kutle.Designer.cs">
       <DependentUpon>Kutle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kuvvet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kuvvet.Designer.cs">
+      <DependentUpon>Kuvvet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moment.Designer.cs">
+      <DependentUpon>Moment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basinc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basinc.Designer.cs">
+      <DependentUpon>Basinc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rijitlik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rijitlik.Designer.cs">
+      <DependentUpon>Rijitlik.cs</DependentUpon>
     </Compile>
     <Compile Include="Uzunluk.cs">
       <SubType>Form</SubType>
@@ -104,11 +146,32 @@
     <EmbeddedResource Include="AnaMenu.resx">
       <DependentUpon>AnaMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Elastik.resx">
+      <DependentUpon>Elastik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guc.resx">
+      <DependentUpon>Guc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Hacim.resx">
       <DependentUpon>Hacim.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IsEnerji.resx">
+      <DependentUpon>IsEnerji.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kutle.resx">
       <DependentUpon>Kutle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kuvvet.resx">
+      <DependentUpon>Kuvvet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moment.resx">
+      <DependentUpon>Moment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basinc.resx">
+      <DependentUpon>Basinc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rijitlik.resx">
+      <DependentUpon>Rijitlik.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Uzunluk.resx">
       <DependentUpon>Uzunluk.cs</DependentUpon>
